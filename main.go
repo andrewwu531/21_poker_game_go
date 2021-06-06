@@ -58,6 +58,8 @@ func main() {
 			fmt.Println("\nConnect")
 			fmt.Printf("\nPrevious Game Scores: %d", previous_games)
 			fmt.Printf("\nAverage Scores for all Previous Game: %f\n", average(previous_games))
+		case "Track Decks":
+			fmt.Printf("Deck of Cards: %s\n", deck)
 		case "EndGame":
 			os.Exit(3)
 		default:

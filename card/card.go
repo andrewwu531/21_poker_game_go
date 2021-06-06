@@ -94,7 +94,7 @@ func HitOption(d *Deck, h *Deck, score *[]int, previous_games *[]int) (Deck, []i
 		*previous_games = append(*previous_games, (*score)[0])
 	}
 	if (*score)[0] > 21 {
-		fmt.Println("Unfortunately, you hit above 21. You have lost this round of the game")
+		fmt.Println("Unfortunately, you hit above 21. You have went busted")
 		*previous_games = append(*previous_games, (*score)[0])
 	}
 
